@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome extensions shortcut",
+  "description": "Chrome extension for providing a shortcut to the chrome extensions page",
+  "permissions": ["activeTab"],
+  "version": "0.0.1",
+	"background": {
+      "service_worker": "/background.js"
+  },
+  "action": {},
+  "commands": {
+      "open-extensions-tab": {
+        "suggested_key": {
+          "mac": "Command+E"
+        },
+        "description": "Open Extensions Tab"
+      }
+    }
+}
